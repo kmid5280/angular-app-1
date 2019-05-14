@@ -10,8 +10,12 @@ import { CoursesService } from './courses.service';
             </tr>
         </table>
         <button 
-            [style.backgroundColor]="isActive? 'blue' : 'white'">Save</button>
-        `
+            [style.backgroundColor]="isActive? 'blue' : 'white'"
+            (click)="onSave()">
+            Save
+        </button>
+            
+            `
 })
 export class CoursesComponent {
     title = "List of courses";
@@ -26,5 +30,8 @@ export class CoursesComponent {
     }
     getTitle() {
         return this.title;
+    }
+    onSave() {
+        console.log('button clicked')
     }
 }
