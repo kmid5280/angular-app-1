@@ -19,7 +19,8 @@ import { CoursesService } from './courses.service';
         {{ course.students | number }} <br/>
         {{ course.rating }} <br/>
         {{ course.price }} <br/>
-        {{ course.releaseDate }}
+        {{ course.releaseDate }}<br/>
+        {{ longText | summary:10 }}<br/>
             `
 })
 export class CoursesComponent {
@@ -33,7 +34,10 @@ export class CoursesComponent {
         rating: 4.93,
         students: 5234,
         price: 100,
-        releaseDate: new Date(2019, 5, 1)
+        releaseDate: new Date(2019, 5, 1),
+        longText: `
+        Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.
+        `
     }
 
 
