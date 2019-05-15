@@ -11,9 +11,10 @@ import { CoursesService } from './courses.service';
         </table>
         <button 
             [style.backgroundColor]="isActive? 'blue' : 'white'"
-            (click)="onSave()">
+            (click)="onSave($event)">
             Save
         </button>
+        <input (keyup.enter)="onKeyUp()" />
             
             `
 })
@@ -31,7 +32,10 @@ export class CoursesComponent {
     getTitle() {
         return this.title;
     }
-    onSave() {
-        console.log('button clicked')
+    onSave($event) {
+        console.log('button clicked', $event);
+    }
+    onKeyUp() {
+        console.log("ENTER was pressed")
     }
 }
