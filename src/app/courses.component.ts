@@ -14,7 +14,7 @@ import { CoursesService } from './courses.service';
             (click)="onSave($event)">
             Save
         </button>
-        <input (keyup.enter)="onKeyUp()" />
+        <input #email (keyup.enter)="onKeyUp(email.value)" />
             
             `
 })
@@ -35,7 +35,7 @@ export class CoursesComponent {
     onSave($event) {
         console.log('button clicked', $event);
     }
-    onKeyUp() {
-        console.log("ENTER was pressed")
+    onKeyUp(email) {
+        console.log(email)
     }
 }
