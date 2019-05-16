@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CoursesComponent } from './courses.component';
 
 @Component({
   selector: 'app-root',
@@ -16,5 +17,10 @@ export class AppComponent {
     {id: 2, name: 'course 2'},
     {id: 3, name: 'course 3'}
   ];
+  
   viewMode = 'map';
+
+  onAdd() {
+    this.courses.push({ id: 4, name: 'course 4'})
+  }
 }
