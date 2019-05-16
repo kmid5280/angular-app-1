@@ -23,7 +23,6 @@ export class AppComponent {
   onAdd() {
     let newId = this.courses[this.courses.length-1].id + 1
     this.courses.push({ id: newId, name: `course ${newId}`})
-    console.log(this.courses)
   }
 
   onRemove(course) {
