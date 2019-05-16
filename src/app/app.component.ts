@@ -21,7 +21,9 @@ export class AppComponent {
   viewMode = 'map';
 
   onAdd() {
-    this.courses.push({ id: 4, name: 'course 4'})
+    let newId = this.courses[this.courses.length-1].id + 1
+    this.courses.push({ id: newId, name: `course ${newId}`})
+    console.log(this.courses)
   }
 
   onRemove(course) {
