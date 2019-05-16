@@ -32,3 +32,9 @@
     <div *ngSwitchCase="'list'">List View Content</div>
     <div *ngSwitchDefault>Other</div>
 </div>
+
+<ul>
+    <li *ngFor="let course of courses">
+        {{course.name}}
+    </li>
+</ul>

@@ -11,6 +11,10 @@ export class AppComponent {
     title: "Title",
     isFavorite: true
   }
-  courses = [1,2];
+  courses = [
+    {id: 1, name: 'course 1'},
+    {id: 2, name: 'course 2'},
+    {id: 3, name: 'course 3'}
+  ];
   viewMode = 'map';
 }
