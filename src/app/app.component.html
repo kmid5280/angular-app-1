@@ -1,4 +1,11 @@
-<h1>Angular</h1>
-<courses></courses>
-
-<app-favorite></app-favorite>
+<div *ngIf="courses.length > 0">
+    List of courses:
+    <ul>
+        <li *ngFor="let course of courses">
+            {{ course }}
+        </li>
+    </ul>
+</div>
+<div *ngIf="courses.length == 0">
+    No courses yet
+</div>
