@@ -12,11 +12,7 @@ export class AppComponent {
     title: "Title",
     isFavorite: true
   }
-  courses = [
-    {id: 1, name: 'course 1'},
-    {id: 2, name: 'course 2'},
-    {id: 3, name: 'course 3'}
-  ];
+  courses 
   
   viewMode = 'map';
 
@@ -28,5 +24,13 @@ export class AppComponent {
   onRemove(course) {
     let index = this.courses.indexOf(course)
     this.courses.splice(index,1)
+  }
+
+  loadCourses() {
+    this.courses = [
+      {id: 1, name: 'course 1'},
+      {id: 2, name: 'course 2'},
+      {id: 3, name: 'course 3'},
+    ];
   }
 }
