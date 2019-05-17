@@ -33,4 +33,8 @@ export class AppComponent {
       {id: 3, name: 'course 3'},
     ];
   }
+
+  trackCourse(index, course) {
+    return course ? course.id : undefined;
+  }
 }
