@@ -12,7 +12,8 @@ export class AppComponent {
     title: "Title",
     isFavorite: true
   }
-  courses 
+  courses
+  canSave = true;
   
   viewMode = 'map';
 
