@@ -38,11 +38,13 @@
         {{ course.name }}
         <button (click)="onRemove(course)">Remove</button>
     </li>
-</ul>-->
+</ul>
 
 <button (click)="loadCourses()">Load Courses</button>
 <ul>
     <li *ngFor="let course of courses; trackBy: trackCourse()">
         {{ course.name }}
     </li>
-</ul>
+</ul>-->
+
+<app-favorite></app-favorite>

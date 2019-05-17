@@ -1,5 +1,8 @@
 <div 
   class="favdiv" 
   (click)="onClick()"
-  [ngClass]="status ? 'on' : 'off'">
+  [ngClass]="{
+    on: status,
+    off: !status
+  }">
 </div>

@@ -11,6 +11,7 @@ export class FavoriteComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log('oninit')
   }
 
   onClick() {
