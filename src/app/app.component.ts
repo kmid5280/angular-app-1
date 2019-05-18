@@ -14,6 +14,10 @@ export class AppComponent {
   }
   courses
   canSave = true;
+  task = {
+    title: 'Review applications',
+    assignee: null
+  }
   
   viewMode = 'map';
 
