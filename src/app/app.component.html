@@ -56,5 +56,8 @@
     }"
 >Save
 </button>
-
-<span>{{ task.assignee?.name }}</span>
+<ul class="names">
+    <li *ngFor="let assignee of task.assignees">
+        <span>{{ assignee.name }}</span>
+    </li>
+</ul>

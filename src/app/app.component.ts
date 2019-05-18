@@ -16,7 +16,16 @@ export class AppComponent {
   canSave = true;
   task = {
     title: 'Review applications',
-    assignee: null
+    assignees: [
+      {
+        id: 1,
+        name: null,
+      },
+      {
+        id: 2,
+        name: 'John Doe',
+      },
+    ]
   }
   
   viewMode = 'map';
