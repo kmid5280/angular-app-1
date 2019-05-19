@@ -56,8 +56,10 @@
     }"
 >Save
 </button>
-<ul class="names">
+<ul>
     <li *ngFor="let assignee of task.assignees">
         <span>{{ assignee.name }}</span>
     </li>
 </ul>
+
+<input type="text" appInputFormat>
