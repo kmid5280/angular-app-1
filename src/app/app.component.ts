@@ -48,6 +48,10 @@ export class AppComponent {
     ];
   }
 
+  onFavoriteChanged() {
+    console.log('fav changed')
+  }
+
   trackCourse(index, course) {
     return course ? course.id : undefined;
   }
