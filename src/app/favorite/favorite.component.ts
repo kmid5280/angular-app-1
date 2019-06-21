@@ -12,11 +12,12 @@ export class FavoriteComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log('oninit')
+    console.log(this.isSelected)
   }
 
   onClick() {
+    this.isSelected = !this.isSelected;
     this.status = !this.status;
-    this.change.emit(this.isSelected);
+    this.change.emit({ newValue: this.isSelected });
   }
 }
