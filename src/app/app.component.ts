@@ -48,8 +48,8 @@ export class AppComponent {
     ];
   }
 
-  onFavoriteChanged() {
-    console.log('fav changed')
+  onFavoriteChanged(isFavorite) {
+    console.log('Favorite changed: ' + isFavorite)
   }
 
   trackCourse(index, course) {
