@@ -17,6 +17,6 @@ export class FavoriteComponent implements OnInit {
 
   onClick() {
     this.status = !this.status;
-    this.change.emit();
+    this.change.emit(this.isSelected);
   }
 }
