@@ -10,7 +10,7 @@ export class AppComponent {
   title = 'angular-app-one';
   post = {
     title: "Title",
-    isFavorite: true
+    isFavorite: false,
   }
   courses
   canSave = true;
@@ -48,8 +48,8 @@ export class AppComponent {
     ];
   }
 
-  onFavoriteChanged(isFavorite) {
-    console.log('Favorite changed: ' + isFavorite)
+  onFavoriteChanged(eventArgs) {
+    console.log('Favorite changed: ' + eventArgs)
   }
 
   trackCourse(index, course) {
