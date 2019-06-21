@@ -49,7 +49,7 @@ export class AppComponent {
   }
 
   onFavoriteChanged(eventArgs) {
-    console.log('Favorite changed: ' + eventArgs)
+    console.log('Favorite changed: ', eventArgs)
   }
 
   trackCourse(index, course) {
