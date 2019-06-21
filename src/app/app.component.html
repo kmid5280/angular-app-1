@@ -63,3 +63,4 @@
 </ul>
 
 <input type="text" [appInputFormat]="'uppercase'">
+<app-favorite [isFavorite]="post.isFavorite" (change)="onFavoriteChanged()"></app-favorite>
