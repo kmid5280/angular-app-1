@@ -1,3 +1,5 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
 .favdiv {
     border: 1px solid black;
     height: 50px;
