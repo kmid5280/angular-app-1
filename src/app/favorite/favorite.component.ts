@@ -21,3 +21,7 @@ export class FavoriteComponent implements OnInit {
     this.change.emit({ newValue: this.isSelected });
   }
 }
+
+export interface FavoriteChangedEventArgs {
+  newValue: boolean
+}
